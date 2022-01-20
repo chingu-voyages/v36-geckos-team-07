@@ -3,10 +3,6 @@ import { NewsCard } from './newsCard/newsCard';
 
 class MainFeed extends Component {
 
-    constructor(){
-        super();
-
-    }
 
     componentDidMount(){
         fetch("https://blockchain-news1.p.rapidapi.com/news", {
@@ -18,6 +14,9 @@ class MainFeed extends Component {
         })
         .then(response => {
             console.log(response.json());
+        })
+        .then(story => {
+            console.log(story)
         })
         .catch(err => {
             console.error(err);
