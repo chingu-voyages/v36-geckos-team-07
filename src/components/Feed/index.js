@@ -1,22 +1,34 @@
 import React, { Component } from 'react'
+import { NewsCard } from './newsCard/newsCard';
 
-class MainFeed extends Component() {
+class MainFeed extends Component {
 
     constructor(){
         super();
-        this.state = {
-            
-        }
+
     }
+
+    componentDidMount(){
+        fetch("https://blockchain-news1.p.rapidapi.com/news", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "blockchain-news1.p.rapidapi.com",
+                "x-rapidapi-key": "35574a9721msh4f07d22f672145ep1c8069jsneb18644463b1"
+            }
+        })
+        .then(response => {
+            console.log(response.json());
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    }
+
     render(){
 
         return(
             <div>
-                <h1>News</h1>
-                <div>
-                <h3>Crypto</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate felis vel augue semper efficitur. Phasellus pretium nisl sit amet neque eleifend dapibus. Duis ac elementum sem. Donec efficitur metus tincidunt, sodales augue et, mattis urna. Phasellus consectetur,</p>
-                </div>
+                <NewsCard></NewsCard>
             </div>
         )
 
