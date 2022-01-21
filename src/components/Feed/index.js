@@ -13,13 +13,24 @@ class MainFeed extends Component {
             }
         })
         .then(response => {
-            console.log(response.json());
+            if(
+                response.ok && 
+
+                response.headers.get('Content-Type').includes('application/json')
+            ){
+                return response.json()
+            } else {
+                throw new Error('somehting went wrong')
+            }
+        })
+        .then(data => {
+            console.log(data)
         })
         .catch(err => {
             console.error(err);
         });
 
-       
+   
     }
 
     render(){
