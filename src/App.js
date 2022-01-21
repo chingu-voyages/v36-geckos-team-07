@@ -3,7 +3,6 @@ import MainFeed from './components/Feed/index'
 import './css/main.css';
 // import './App.css';
 
-
 function App() {
   return (
     <div>
