@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { newsCard } from '../newsCard/newsCard';
+import { NewsCard } from '../newsCard/newsCard';
 
 export const NewsCardList = (props) => (
     <div>
         {
-            
+
         }
 
     </div>

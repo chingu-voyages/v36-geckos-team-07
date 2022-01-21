@@ -5,22 +5,21 @@ class MainFeed extends Component {
 
 
     componentDidMount(){
-        fetch("https://blockchain-news1.p.rapidapi.com/news", {
+        fetch("https://cryptocurrency-news-live1.p.rapidapi.com/NFT_DeFi", {
             "method": "GET",
             "headers": {
-                "x-rapidapi-host": "blockchain-news1.p.rapidapi.com",
-                "x-rapidapi-key": "35574a9721msh4f07d22f672145ep1c8069jsneb18644463b1"
+                "x-rapidapi-host": "cryptocurrency-news-live1.p.rapidapi.com",
+                "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY
             }
         })
         .then(response => {
             console.log(response.json());
         })
-        .then(story => {
-            console.log(story)
-        })
         .catch(err => {
             console.error(err);
         });
+
+       
     }
 
     render(){
