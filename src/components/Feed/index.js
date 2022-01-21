@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
-import { NewsCard } from './newsCard/newsCard';
+import { NewsCardList } from './news-card-list/news-card-list';
 
 class MainFeed extends Component {
+    constructor(){
+        super()
 
+        this.state = {
+            news: []
+        }
+    }
 
     componentDidMount(){
-        fetch("https://cryptocurrency-news-live1.p.rapidapi.com/NFT_DeFi", {
+        fetch("https://cryptocurrency-news-live1.p.rapidapi.com/news", {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "cryptocurrency-news-live1.p.rapidapi.com",
@@ -13,20 +19,35 @@ class MainFeed extends Component {
             }
         })
         .then(response => {
-            console.log(response.json());
+            if(
+                // check if response's status is 200
+                response.ok && 
+                // check if API return data is in JSON format
+                response.headers.get('Content-Type').includes('application/json')
+            ){
+                return response.json()
+            } else {
+                throw new Error('somehting went wrong')
+            }
+        })
+        .then(data => {
+            this.setState({ news: data })
         })
         .catch(err => {
             console.error(err);
         });
 
-       
+   
     }
 
     render(){
 
         return(
             <div>
-                <NewsCard></NewsCard>
+                <NewsCardList news={this.state.news}>
+
+                </NewsCardList>
+            
             </div>
         )
 
