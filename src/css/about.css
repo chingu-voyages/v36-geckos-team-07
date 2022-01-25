@@ -1,7 +1,3 @@
-body {
-  background-color: white;
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,4 +103,4 @@ body {
     height: 100%;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=about.css.map */

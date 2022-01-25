@@ -1,6 +1,9 @@
+// import { Navbar } from 'react-bootstrap';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './css/main.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 // Pages
 import EducationPage from './pages/EducationPage';
@@ -10,7 +13,7 @@ import NewsPage from './pages/NewsPage';
 import ErrorPage from './pages/ErrorPage';
 
 // Components
-import NavBar from './components/Navbar';
+import NavBar from './components/Navbar/index';
 
 function App() {
   return (
