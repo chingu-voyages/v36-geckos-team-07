@@ -6,7 +6,7 @@ import logo from './../../images/logo.png';
 
 function NavBar() {
   return <>
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
   <Container>
   <Navbar.Brand href="#home">
   <img 
