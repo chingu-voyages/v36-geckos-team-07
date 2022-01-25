@@ -8,7 +8,7 @@ function NavBar() {
   return <>
   <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
   <Container>
-  <Navbar.Brand href="#home">
+  <Navbar.Brand href="/home">
   <img 
           alt="Logo"
           src={logo}
@@ -31,10 +31,10 @@ function NavBar() {
       </NavDropdown>
     </Nav> */}
     <Nav className="me-auto">
-      <Nav.Link href="#news">News</Nav.Link>
-      <Nav.Link href="#education">Education</Nav.Link>
-      <Nav.Link href="#trendingnfts">Trending NFTs</Nav.Link>
-      <Nav.Link eventKey={4} href="#about">
+      <Nav.Link href="/news">News</Nav.Link>
+      <Nav.Link href="/education">Education</Nav.Link>
+      <Nav.Link href="/trendingnfts">Trending NFTs</Nav.Link>
+      <Nav.Link eventKey={4} href="/about">
         About
       </Nav.Link>
     </Nav>
