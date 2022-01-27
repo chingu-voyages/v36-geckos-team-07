@@ -24,6 +24,7 @@ function App() {
 
         <Routes>
             <Route path='/' element={<NewsPage/>} />
+            <Route path='/home' element={<NewsPage/>} />
             <Route path='/news' element={<NewsPage/>} />
             <Route path='/education' element={<EducationPage/>} />
             <Route path='/trendingnfts' element={<TrendingNFTsPage/>} />
