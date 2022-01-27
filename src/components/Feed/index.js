@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
 import { DropDown, Option } from './main-feed-dropdown/main-feed-dropdown'
+import { DropdownList } from './dropdown-list/dropdown-list'
 
 class MainFeed extends Component {
     constructor(){
@@ -54,9 +55,7 @@ class MainFeed extends Component {
                     formLabel="Choose News Source"
                 >
                     <Option selected value="click to see options" />
-                    <Option value="Option 1"/>
-                    <Option value="option 2"/>
-                    <Option value="Option 3"/>
+                    {/* <DropdownList value={this.state.news} /> */}
                 </DropDown>
 
                 <NewsCardList news={this.state.news}>

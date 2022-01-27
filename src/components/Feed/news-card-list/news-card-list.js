@@ -3,7 +3,7 @@ import { NewsCard } from '../newsCard/newsCard';
 
 export const NewsCardList = (props) => (
      <div>
-        {props.news.filter((news, index) => (
+        {props.news.map((news, index) => (
             <NewsCard key={index} news={news} />
         ))}
     </div>
