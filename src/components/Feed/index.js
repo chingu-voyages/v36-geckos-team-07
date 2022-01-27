@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
+import { DropDown, Option } from './main-feed-dropdown/main-feed-dropdown'
 
 class MainFeed extends Component {
     constructor(){
         super()
 
         this.state = {
-            news: []
+            news: [],
+            dropdown: ''
         }
     }
 
@@ -40,10 +42,23 @@ class MainFeed extends Component {
    
     }
 
+    handleChange = (e) => {
+        this.setState({ dropdown: e.target.value })
+    }
+
     render(){
 
         return(
             <div>
+                <DropDown 
+                    formLabel="Choose News Source"
+                >
+                    <Option selected value="click to see options" />
+                    <Option value="Option 1"/>
+                    <Option value="option 2"/>
+                    <Option value="Option 3"/>
+                </DropDown>
+
                 <NewsCardList news={this.state.news}>
 
                 </NewsCardList>
