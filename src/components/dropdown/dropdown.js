@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../../../sass/components/dropdown.scss';
+import '../../sass/components/dropdown.scss';
 
 export const DropDown = (props) => (
     <form>
@@ -13,6 +13,6 @@ export const DropDown = (props) => (
 
 export const Option = (props) => (
     <option selected={props.selected}>
-        {props.value}
+        {props.value.name}
     </option>
 ) 

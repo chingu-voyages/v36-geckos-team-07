@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
-import { DropDown, Option } from './main-feed-dropdown/main-feed-dropdown'
-import { DropdownList } from './dropdown-list/dropdown-list'
+
 
 class MainFeed extends Component {
     constructor(){
