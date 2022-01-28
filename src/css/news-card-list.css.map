@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../sass/components/news-card-list.scss"
+    ],
+    "names": [],
+    "file": "news-card-list.css"
+}

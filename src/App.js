@@ -7,6 +7,7 @@ import './css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Pages
+import HomePage from './pages/HomePage';
 import EducationPage from './pages/EducationPage';
 import AboutPage from './pages/AboutPage';
 import TrendingNFTsPage from './pages/TrendingNFTsPage';
@@ -23,8 +24,8 @@ function App() {
         <NavBar />
 
         <Routes>
-            <Route path='/' element={<NewsPage/>} />
-            <Route path='/home' element={<NewsPage/>} />
+            <Route path='/' element={<HomePage/>} />
+            <Route path='/home' element={<HomePage/>} />
             <Route path='/news' element={<NewsPage/>} />
             <Route path='/education' element={<EducationPage/>} />
             <Route path='/trendingnfts' element={<TrendingNFTsPage/>} />
