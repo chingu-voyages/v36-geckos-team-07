@@ -43,12 +43,12 @@ class MainFeed extends Component {
     render(){
 
         return(
-            <div>
+            <>
                 <NewsCardList news={this.state.news}>
 
                 </NewsCardList>
             
-            </div>
+            </>
         )
 
     }

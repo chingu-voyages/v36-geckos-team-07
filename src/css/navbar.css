@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=navbar.css.map */
+.navbar .container .navbar-brand {
+  font-size: 35px;
+  margin: 8px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar .container .navbar-brand .nav .nav-link {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=navbar.css.map */
