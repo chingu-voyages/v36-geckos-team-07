@@ -50,19 +50,12 @@ class MainFeed extends Component {
     render(){
 
         return(
-            <div>
-                <DropDown 
-                    formLabel="Choose News Source"
-                >
-                    <Option selected value="click to see options" />
-                    {/* <DropdownList value={this.state.news} /> */}
-                </DropDown>
-
+            <>
                 <NewsCardList news={this.state.news}>
 
                 </NewsCardList>
             
-            </div>
+            </>
         )
 
     }

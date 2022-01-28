@@ -12,11 +12,11 @@ function NavBar() {
   <img 
           alt="Logo"
           src={logo}
-          width="30"
-          height="30"
+          width="50"
+          height="50"
           className="d-inline-block align-top"
         />{' '}
-        Blockchain/NFT App</Navbar.Brand>
+        NFT App</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     {/* <Nav className="me-auto">
@@ -30,7 +30,7 @@ function NavBar() {
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
     </Nav> */}
-    <Nav className="me-auto">
+    <Nav className="ms-auto">
       <Nav.Link href="/news">News</Nav.Link>
       <Nav.Link href="/education">Education</Nav.Link>
       <Nav.Link href="/trendingnfts">Trending NFTs</Nav.Link>
