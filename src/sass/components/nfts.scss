@@ -1,0 +1,16 @@
+.nft-page-container {    
+    border: 5px solid red;
+    display: flex;
+}
+
+.nft-list {
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-list-title {
+    text-align: center;
+    color: red;
+    font-size: 80%;
+}

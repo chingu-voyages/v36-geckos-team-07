@@ -1,11 +1,12 @@
 import React from 'react';
-import TrendingNfts from '../components/TrendingNFTs'
+import TrendingNftsList from '../components/TrendingNFTs/nft-card-list/nft-card-list';
 
 const TrendingNFTsPage = () => {
     return (
-        <div>
-            <h1>TrendingNFTs Page</h1>
-            <TrendingNfts />
+        <div className="nft-page-container">
+            <TrendingNftsList title={'Daily'} />            
+            <TrendingNftsList title={'Weekly'} />            
+            <TrendingNftsList title={'Monthly'} />            
         </div>
     );
 }
