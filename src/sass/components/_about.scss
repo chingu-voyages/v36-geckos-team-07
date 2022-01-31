@@ -1,0 +1,97 @@
+$textColor: rgb(24, 24, 24);
+$titleFont: Arial, Helvetica, Sans-serif;
+$cardContainerColor: rgb(192,192,192);
+$cardTextColor: rgb(242,242,242);
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+
+    h1 {
+        font-family: $titleFont;
+        color: $textColor;
+        text-align: center;
+        margin: 10px;
+        padding-top: 20px;
+        font-weight: 700;
+    }
+}
+.about-header {
+    width: 100%;
+    height: 80px;
+    background-color: $cardTextColor;
+    
+}
+
+.about-card {
+    background-color: $cardTextColor;
+
+    p{
+        text-align: justify;
+        display: block;
+        margin: 2em;
+        font-weight: 500;
+    }
+
+    .card-group {
+        margin: 20px;
+        padding: 30px;
+        border-radius: 10%;
+
+    }
+
+    .card {
+        background-color: $cardContainerColor;
+        color: $cardTextColor;
+        padding: 10px;
+        box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
+        text-align: center;
+        align-items: center;
+    }
+}
+.circle {
+    height: 180px;
+    width: 180px;
+    position: relative;
+
+    .shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $cardTextColor;
+        clip-path: circle(49.4% at 50% 50%);
+        transition: 0.5s;
+
+        .card-img {
+            position: absolute;
+            top: 10;
+            left: 10;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .circle:hover .shape {
+        transform: translateY(-30px);
+    }
+      
+}
+
+@media (min-width: 900px) {
+    .circle {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .shape .card-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+  
+  
