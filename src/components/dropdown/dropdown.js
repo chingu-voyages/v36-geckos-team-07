@@ -12,7 +12,7 @@ export const DropDown = (props) => (
 )
 
 export const Option = (props) => (
-    <option selected={props.selected}>
-        {props.value.name}
+    <option value={props.selected}>
+        {props.value}
     </option>
 ) 
