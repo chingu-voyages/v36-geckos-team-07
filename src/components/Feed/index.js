@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
+import { DropDown, Option} from '../dropdown/dropdown'
 
 class MainFeed extends Component {
     constructor(){
         super()
 
         this.state = {
-            news: []
+            news: [],
+            dropdown: ''
         }
+
+        
     }
 
     componentDidMount(){
@@ -27,7 +31,7 @@ class MainFeed extends Component {
             ){
                 return response.json()
             } else {
-                throw new Error('somehting went wrong')
+                throw new Error('something went wrong')
             }
         })
         .then(data => {
@@ -40,12 +44,54 @@ class MainFeed extends Component {
    
     }
 
+
+
     render(){
+        const { news, dropdown } = this.state;
+        const nameArray = []
+        // filters the news array by name into new array filteredNews
+        const filteredNews = news.filter(news => news.name.toLowerCase().includes(dropdown.toLowerCase()))
+        
+
+        const newsNames = (names) => {
+    
+            // takes the "names" array object and removes all the duplicates and enters it into a new array
+            let noDuplicateNames = Array.from(new Set(names))   
+        
+            // with all the duplicates removed we return the remainder names by maping through it and entering the names into our imported Options tag
+            return noDuplicateNames.map((name, index) => (
+              <Option key={index} value={name} />
+                
+            ))
+        }  
+
+        const handleSelect = (e) => {
+            this.setState({ dropdown: e.target.value })
+        }
 
         return(
             <>
-                <NewsCardList news={this.state.news}>
-
+                <h1>News</h1>
+                <DropDown
+                    formLabel="Choose news source"
+                    onChange={handleSelect}
+                >
+                    
+                    {
+                        // maps through crypto news api and pushes the news api names to the created empty nameArray 
+                         news.map((news) => (
+                
+                            nameArray.push(news.name)
+                            
+                        ))
+                    }
+                    {
+                        // calls the function newsNames and enters nameArray as the object
+                        newsNames(nameArray)
+                    }
+                </DropDown>
+                <NewsCardList news={filteredNews}>
+                    
                 </NewsCardList>
             
             </>
