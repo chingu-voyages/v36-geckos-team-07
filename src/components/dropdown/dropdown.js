@@ -3,7 +3,10 @@ import React from "react";
 import '../../sass/components/dropdown.scss';
 
 export const DropDown = (props) => (
-    <form>
+    <form 
+        action={props.action}
+        onChange={props.onChange}
+    >
         <label htmlFor="newsSites">{props.formLabel}</label>
         <select id="newsSites">
             {props.children}

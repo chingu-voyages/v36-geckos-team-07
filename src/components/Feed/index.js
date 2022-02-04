@@ -10,6 +10,8 @@ class MainFeed extends Component {
             news: [],
             dropdown: ''
         }
+
+        
     }
 
     componentDidMount(){
@@ -29,7 +31,7 @@ class MainFeed extends Component {
             ){
                 return response.json()
             } else {
-                throw new Error('somehting went wrong')
+                throw new Error('something went wrong')
             }
         })
         .then(data => {
@@ -42,17 +44,18 @@ class MainFeed extends Component {
    
     }
 
-    handleChange = (e) => {
-        this.setState({ dropdown: e.target.value })
-    }
+
 
     render(){
-        const { news, dropdown} = this.state;
+        const { news, dropdown } = this.state;
         const nameArray = []
+        // filters the news array by name into new array filteredNews
+        const filteredNews = news.filter(news => news.name.toLowerCase().includes(dropdown.toLowerCase()))
+        
 
         const newsNames = (names) => {
     
-            // takes the "names" and removes all the duplicates and enters it into a new array
+            // takes the "names" array object and removes all the duplicates and enters it into a new array
             let noDuplicateNames = Array.from(new Set(names))   
         
             // with all the duplicates removed we return the remainder names by maping through it and entering the names into our imported Options tag
@@ -60,19 +63,20 @@ class MainFeed extends Component {
               <Option key={index} value={name} />
                 
             ))
-        }
+        }  
 
-        const filteredNames = news.filter(news => news.name.toLowerCase().includes(dropdown.toLowerCase()))
+        const handleSelect = (e) => {
+            this.setState({ dropdown: e.target.value })
+        }
 
         return(
             <>
                 <h1>News</h1>
                 <DropDown
                     formLabel="Choose news source"
-                    action="/"
-                    handleChange={this.handleChange}
+                    onChange={handleSelect}
                 >
-                    <Option selected value="Click to see options" />
+                    
                     {
                         // maps through crypto news api and pushes the news api names to the created empty nameArray 
                          news.map((news) => (
@@ -86,8 +90,8 @@ class MainFeed extends Component {
                         newsNames(nameArray)
                     }
                 </DropDown>
-                <NewsCardList news={filteredNames}>
-
+                <NewsCardList news={filteredNews}>
+                    
                 </NewsCardList>
             
             </>
