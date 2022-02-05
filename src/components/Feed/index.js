@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
 import { DropDown, Option} from '../dropdown/dropdown';
 import '../../sass/components/_page-header.scss'
+import '../../sass/components/_page-body.scss'
+import TrendingNftsList from '../TrendingNFTs/nft-card-list/nft-card-list';   
 
 class MainFeed extends Component {
     constructor(){
@@ -72,31 +74,38 @@ class MainFeed extends Component {
 
         return(
             <>
-                <div className="page-head-container">
-                    <h1>News</h1>
-                    <DropDown
-                        formLabel="Choose news source"
-                        onChange={handleSelect}
-                    >
-                        
-                        {
-                            // maps through crypto news api and pushes the news api names to the created empty nameArray 
-                            news.map((news) => (
-                    
-                                nameArray.push(news.name)
+                {/* page header */}
+                <div className="page-body">
+                    <div className="daily-news">
+                        <div className="page-head-container">
+                            <h1>News</h1>
+                            <DropDown
+                                formLabel="Choose news source"
+                                onChange={handleSelect}
+                            >
                                 
-                            ))
-                        }
-                        {
-                            // calls the function newsNames and enters nameArray as the object
-                            newsNames(nameArray)
-                        }
-                    </DropDown>
-                    
+                                {
+                                    // maps through crypto news api and pushes the news api names to the created empty nameArray 
+                                    news.map((news) => (
+                            
+                                        nameArray.push(news.name)
+                                        
+                                    ))
+                                }
+                                {
+                                    // calls the function newsNames and enters nameArray as the object
+                                    newsNames(nameArray)
+                                }
+                            </DropDown>
+                        </div>
+
+                        <NewsCardList news={filteredNews} />
+
+                    </div>
+
+                    <TrendingNftsList title={'Daily'} className="daily-nft"/>
+                
                 </div>
-                <NewsCardList news={filteredNews}>
-                    
-                </NewsCardList>
             
             </>
         )
