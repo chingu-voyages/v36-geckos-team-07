@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
-import { DropDown, Option} from '../dropdown/dropdown'
+import { DropDown, Option} from '../dropdown/dropdown';
+import '../../sass/components/_page-header.scss'
 
 class MainFeed extends Component {
     constructor(){
@@ -71,25 +72,28 @@ class MainFeed extends Component {
 
         return(
             <>
-                <h1>News</h1>
-                <DropDown
-                    formLabel="Choose news source"
-                    onChange={handleSelect}
-                >
+                <div className="page-head-container">
+                    <h1>News</h1>
+                    <DropDown
+                        formLabel="Choose news source"
+                        onChange={handleSelect}
+                    >
+                        
+                        {
+                            // maps through crypto news api and pushes the news api names to the created empty nameArray 
+                            news.map((news) => (
                     
-                    {
-                        // maps through crypto news api and pushes the news api names to the created empty nameArray 
-                         news.map((news) => (
-                
-                            nameArray.push(news.name)
-                            
-                        ))
-                    }
-                    {
-                        // calls the function newsNames and enters nameArray as the object
-                        newsNames(nameArray)
-                    }
-                </DropDown>
+                                nameArray.push(news.name)
+                                
+                            ))
+                        }
+                        {
+                            // calls the function newsNames and enters nameArray as the object
+                            newsNames(nameArray)
+                        }
+                    </DropDown>
+                    
+                </div>
                 <NewsCardList news={filteredNews}>
                     
                 </NewsCardList>
