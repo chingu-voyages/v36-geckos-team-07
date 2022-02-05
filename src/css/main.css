@@ -154,17 +154,8 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.nft-page-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.nft-list {
-  display: flex;
-  flex-direction: column;
-}
-
 .nft-list-title {
   text-align: center;
-  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
