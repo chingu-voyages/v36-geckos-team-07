@@ -130,7 +130,7 @@ const TrendingNftsList = ({ title }) => {
   if (loading) {
     return (
       <div className="nft-list">
-        <h2 className="nft-list-title">{title} Trending NFTs</h2>
+        <h3 className="nft-list-title">{title} Trending NFTs</h3>
 
         <Spinner
           animation="border"
@@ -145,7 +145,7 @@ const TrendingNftsList = ({ title }) => {
 
   return (
     <div className="nft-list">
-      <h2 className="nft-list-title">{title} Trending NFTs</h2>
+      <h3 className="nft-list-title">{title} Trending NFTs</h3>
       {NFTs.map((NFT, index) => (
         <TrendingNftsCard key={index} NFT={NFT} />
       ))}
