@@ -1,0 +1,11 @@
+$backgroundColor: rgb(203,230,239);
+.page-head-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $backgroundColor;
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
