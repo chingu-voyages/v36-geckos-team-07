@@ -1,12 +1,14 @@
 .page-body{
     display: flex;
-
+    background-color: rgb(203,230,239);
+    
     .daily-news{
-        width: 70%;
+        width: 60%;
     }
 
-    .daily-nft{
-        width: 30%;
+    .nft-list{
+        width: 40%;
+        
     }
 }
 
