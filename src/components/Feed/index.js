@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
-import { DropDown, Option} from '../dropdown/dropdown';
+import { DropDown, Option} from '../Dropdown';
 import TrendingNftsList from '../TrendingNFTs/nft-card-list/nft-card-list';   
 
 class MainFeed extends Component {
@@ -73,7 +73,7 @@ class MainFeed extends Component {
         return(
             <>
                 {/* page header */}
-                <div className="page-body">
+                <div className="news-body">
                     <div className="daily-news">
                         <div className="page-head-container">
                             <h1>News</h1>
