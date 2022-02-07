@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
 import { DropDown, Option} from '../dropdown/dropdown';
-import '../../sass/components/_page-header.scss'
-import '../../sass/components/_page-body.scss'
 import TrendingNftsList from '../TrendingNFTs/nft-card-list/nft-card-list';   
 
 class MainFeed extends Component {
@@ -103,7 +101,7 @@ class MainFeed extends Component {
 
                     </div>
 
-                    <TrendingNftsList title={'Daily'} className="daily-nft"/>
+                    <TrendingNftsList title={'Daily'} className="nft-list"/>
                 
                 </div>
             
