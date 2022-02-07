@@ -2,6 +2,10 @@ body {
   background-color: white;
 }
 
+body {
+  background-color: #cbe6ef;
+}
+
 .navbar .container .navbar-brand {
   font-size: 35px;
   margin: 8px 0;
@@ -227,6 +231,17 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+.nft-card {
+  border-radius: 1.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.nft-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .page-body {

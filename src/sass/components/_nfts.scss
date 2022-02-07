@@ -1,13 +1,3 @@
-// .nft-page-container {    
-//     display: flex;
-//     justify-content: space-around;
-// }
-
-// .nft-list {
-//     display: flex;
-//     flex-direction: column;
-// }
-
 .list-title-container{
     display: flex;
     height: 110px;
@@ -19,4 +9,13 @@
         margin: 0;
         padding: 0;
     }
+}
+
+.nft-card {
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.nft-card:hover {
+    transform: scale(1.03);
 }
