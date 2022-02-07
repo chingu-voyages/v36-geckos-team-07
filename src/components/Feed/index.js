@@ -71,12 +71,17 @@ class MainFeed extends Component {
         }
 
         return(
-            <>
-                {/* page header */}
+            <div >
+                
                 <div className="page-body">
                     <div className="daily-news">
+
+                        {/* page header */}
                         <div className="page-head-container">
-                            <h1>News</h1>
+                            <div>
+                                <h1>News Source</h1>
+                                <p>Your Daily news source for all things crypto, blockchain, and NFTs</p>
+                            </div>
                             <DropDown
                                 formLabel="Choose news source"
                                 onChange={handleSelect}
@@ -95,8 +100,16 @@ class MainFeed extends Component {
                                     newsNames(nameArray)
                                 }
                             </DropDown>
-                        </div>
 
+
+                        </div>
+                        <hr
+                            style={{
+                            color: '#000000',
+                            height: 5,
+                            borderColor: '#000000'
+                            }}
+                        />
                         <NewsCardList news={filteredNews} />
 
                     </div>
@@ -105,7 +118,7 @@ class MainFeed extends Component {
                 
                 </div>
             
-            </>
+            </div>
         )
 
     }
