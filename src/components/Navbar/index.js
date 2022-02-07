@@ -32,7 +32,7 @@ function NavBar() {
     </Nav> */}
     <Nav className="ms-auto">
       <Nav.Link href="/news">News</Nav.Link>
-      <Nav.Link href="/education">Education</Nav.Link>
+      <Nav.Link href="/resource">Resources</Nav.Link>
       <Nav.Link href="/trendingnfts">Trending NFTs</Nav.Link>
       <Nav.Link eventKey={4} href="/about">
         About
