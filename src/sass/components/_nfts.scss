@@ -11,6 +11,11 @@
     }
 }
 
+.nft-list {
+    height: 89vh;
+    overflow-y: auto;
+}
+
 .nft-card {
     border-radius: 1.5rem;
     transition: all 0.2s ease-in;

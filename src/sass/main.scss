@@ -3,16 +3,16 @@
 @import './base/base';
 
 // PAGES
-@import './pages/trendingNFTs';
+@import './pages/resources';
+@import './pages/news';
 
 // COMPONENTS
-@import './components/navbar';
 @import './components/about';
 @import './components/feed';
-@import './components/header';
 @import './components/nfts';
-@import './components/page-body';
 @import './components/dropdown';
 @import './components/page-header';
-@import './components/resources';
 
+// LAYOUT
+@import './layout/navbar';
+@import './layout/header';
