@@ -1,5 +1,10 @@
-@import "~bootstrap/scss/bootstrap";
+// BASE
 @import './base/base';
+
+// PAGES
+@import './pages/trendingNFTs';
+
+// COMPONENTS
 @import './components/navbar';
 @import './components/about';
 @import './components/feed';
@@ -9,3 +14,4 @@
 @import './components/dropdown';
 @import './components/page-header';
 @import './components/resources';
+
