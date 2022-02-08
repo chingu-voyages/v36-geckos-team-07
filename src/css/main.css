@@ -8,6 +8,7 @@ body {
   position: relative;
   height: 0;
 }
+
 .video-responsive iframe {
   left: 0;
   top: 0;
@@ -17,14 +18,28 @@ body {
 }
 
 .news-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .news-body .daily-news {
   width: 70%;
   margin-left: 3rem;
 }
+
 .news-body .nft-list {
   width: 30%;
+}
+
+@media (max-width: 414px) {
+  .news-body .daily-news {
+    width: 100%;
+    margin-left: 0;
+  }
+  .news-body .nft-list {
+    display: none;
+  }
 }
 
 .about {
@@ -137,7 +152,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  background-color: #cbe6ef;
+  height: 75vh;
+  overflow-y: auto;
 }
 
 .newsCardList h1 {
@@ -154,7 +170,7 @@ body {
   padding: .4rem 2rem;
   font-size: inherit;
   background-color: #f2f2f2;
-  margin-bottom: 0.8rem;
+  margin: 0.4rem 0.9rem 0.8rem 0.9rem;
   margin-top: 0.4rem;
   -webkit-transition: background-color 0.5s ease-in;
   transition: background-color 0.5s ease-in;
@@ -173,6 +189,12 @@ body {
           transition-delay: 0.2s;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
+}
+
+@media (max-width: 414px) {
+  .newsCardList {
+    height: 66vh;
+  }
 }
 
 .list-title-container {
@@ -267,7 +289,9 @@ form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 110px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -288,27 +312,43 @@ form label {
             justify-content: center;
     height: 170px;
   }
+  .page-head-container div {
+    margin-left: 1.5rem;
+  }
 }
 
 .navbar .container .navbar-brand {
   font-size: 35px;
   margin: 8px 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .navbar .container .navbar-brand .nav .nav-link {
   font-size: 1.6rem;
 }
 
 .header {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   width: 100vw;
   height: calc(100vh - 85px);
 }
+
 .header .header-image {
   width: 100%;
   height: calc(100vh - 85px);
@@ -317,6 +357,7 @@ form label {
   background-position: center center;
   background-attachment: fixed;
 }
+
 .header .header-title {
   position: absolute;
   width: 100%;
@@ -325,11 +366,13 @@ form label {
   margin: auto;
   bottom: 50%;
 }
+
 .header .header-title h1 {
   color: #f2f2f2;
 }
+
 .header .header-title p {
   color: #f2f2f2;
   font-size: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
