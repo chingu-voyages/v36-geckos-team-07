@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
-import { DropDown, Option} from '../Dropdown';
+import { DropDown, Option} from '../dropdown/index';
 import TrendingNftsList from '../TrendingNFTs/nft-card-list/nft-card-list';   
 
 class MainFeed extends Component {
@@ -75,8 +75,13 @@ class MainFeed extends Component {
                 {/* page header */}
                 <div className="news-body">
                     <div className="daily-news">
+
+                        {/* page header */}
                         <div className="page-head-container">
-                            <h1>News</h1>
+                            <div>
+                                <h1>News Source</h1>
+                                <p>Your Daily news source for all things crypto, blockchain, and NFTs</p>
+                            </div>
                             <DropDown
                                 formLabel="Choose news source"
                                 onChange={handleSelect}
@@ -95,8 +100,16 @@ class MainFeed extends Component {
                                     newsNames(nameArray)
                                 }
                             </DropDown>
-                        </div>
 
+
+                        </div>
+                        <hr
+                            style={{
+                            color: '#000000',
+                            height: 5,
+                            borderColor: '#000000'
+                            }}
+                        />
                         <NewsCardList news={filteredNews} />
 
                     </div>

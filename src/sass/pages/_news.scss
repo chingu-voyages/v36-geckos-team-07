@@ -11,3 +11,15 @@
     }
 }
 
+@media(max-width: 414px){
+    .news-body{
+            .daily-news{
+                width: 100%;
+                margin-left: 0;
+            }
+            
+            .nft-list{
+                display: none;
+            }
+        }
+    }
