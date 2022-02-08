@@ -2,8 +2,7 @@
     display: flex;
 
     .daily-news{
-        width: 70%;
-        margin-left: 3rem;
+        width: 70%; 
     }
 
     .nft-list{
@@ -13,13 +12,15 @@
 
 @media(max-width: 414px){
     .news-body{
-            .daily-news{
-                width: 100%;
-                margin-left: 0;
-            }
-            
-            .nft-list{
-                display: none;
-            }
+        width: 100%;
+
+        .daily-news{
+            width: 100%;
+            margin-left: 0;
+        }
+        
+        .nft-list{
+            display: none;
         }
     }
+}

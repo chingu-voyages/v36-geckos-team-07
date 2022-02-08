@@ -72,8 +72,7 @@ class MainFeed extends Component {
 
         return(
             <>
-                {/* page header */}
-                <div className="news-body">
+                <div className="news-body container">
                     <div className="daily-news">
 
                         {/* page header */}
@@ -104,10 +103,11 @@ class MainFeed extends Component {
 
                         </div>
                         <hr
+                            
                             style={{
                             color: '#000000',
                             height: 5,
-                            borderColor: '#000000'
+                            borderColor: '#000000',
                             }}
                         />
                         <NewsCardList news={filteredNews} />

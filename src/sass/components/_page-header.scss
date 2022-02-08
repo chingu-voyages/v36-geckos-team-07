@@ -1,9 +1,11 @@
 .page-head-container{
     display: flex;
-    justify-content: space-evenly;
-    height: 110px;
+    justify-content: space-between;
     align-items: center;
 
+    p{
+        margin-bottom: 0;
+    }
 
 }
 
@@ -14,9 +16,7 @@
         justify-content: center;
         height: 170px;
         
-        div{
-            margin-left: 1.5rem;
-        }
+  
 
     }
 }
