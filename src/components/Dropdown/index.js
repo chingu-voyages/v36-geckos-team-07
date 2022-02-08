@@ -1,7 +1,5 @@
 import React from "react";
 
-import '../../sass/components/_dropdown.scss';
-
 export const DropDown = (props) => (
     <form 
         action={props.action}

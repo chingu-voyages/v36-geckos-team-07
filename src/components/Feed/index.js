@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NewsCardList } from './news-card-list/news-card-list';
-import { DropDown, Option} from '../Dropdown';
+import { DropDown, Option} from '../';
 import TrendingNftsList from '../TrendingNFTs/nft-card-list/nft-card-list';   
 
 class MainFeed extends Component {
@@ -118,7 +118,7 @@ class MainFeed extends Component {
                 
                 </div>
             
-            </div>
+            </>
         )
 
     }
