@@ -1,0 +1,22 @@
+.page-head-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 110px;
+    align-items: center;
+
+
+}
+
+@media(max-width: 414px){
+    .page-head-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 170px;
+        
+        div{
+            margin-left: 1.5rem;
+        }
+
+    }
+}

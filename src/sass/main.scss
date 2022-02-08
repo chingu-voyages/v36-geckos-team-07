@@ -1,6 +1,18 @@
+// @import "~bootstrap/scss/bootstrap";
+// BASE
 @import './base/base';
-@import './components/navbar';
+
+// PAGES
+@import './pages/resources';
+@import './pages/news';
+
+// COMPONENTS
 @import './components/about';
 @import './components/feed';
-@import './components/header';
 @import './components/nfts';
+@import './components/dropdown';
+@import './components/page-header';
+
+// LAYOUT
+@import './layout/navbar';
+@import './layout/header';

@@ -1,23 +1,63 @@
 body {
-  background-color: white;
+  background-color: #cbe6ef;
 }
 
-.navbar .container .navbar-brand {
-  font-size: 35px;
-  margin: 8px 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
-.navbar .container .navbar-brand .nav .nav-link {
-  font-size: 1.6rem;
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.news-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-body .daily-news {
+  width: 70%;
+  margin-left: 3rem;
+}
+
+.news-body .nft-list {
+  width: 30%;
+}
+
+@media (max-width: 414px) {
+  .news-body .daily-news {
+    width: 100%;
+    margin-left: 0;
+  }
+  .news-body .nft-list {
+    display: none;
+  }
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100vw;
 }
+
 .about h1 {
   font-family: Arial, Helvetica, Sans-serif;
   color: #181818;
@@ -36,24 +76,30 @@ body {
 .about-card {
   background-color: #f2f2f2;
 }
+
 .about-card p {
   text-align: justify;
   display: block;
   margin: 2em;
   font-weight: 500;
 }
+
 .about-card .card-group {
   margin: 20px;
   padding: 30px;
   border-radius: 10%;
 }
+
 .about-card .card {
   background-color: silver;
   color: #f2f2f2;
   padding: 10px;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .circle {
@@ -61,6 +107,7 @@ body {
   width: 180px;
   position: relative;
 }
+
 .circle .shape {
   position: absolute;
   top: 0;
@@ -70,8 +117,10 @@ body {
   background: #f2f2f2;
   -webkit-clip-path: circle(49.4% at 50% 50%);
           clip-path: circle(49.4% at 50% 50%);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .circle .shape .card-img {
   position: absolute;
   top: 10;
@@ -81,8 +130,10 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .circle .circle:hover .shape {
-  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 @media (min-width: 900px) {
@@ -90,45 +141,214 @@ body {
     height: 250px;
     width: 250px;
   }
-
   .shape .card-img {
     width: 100%;
     height: 100%;
   }
 }
+
 .newsCardList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 20px;
-  background-color: #cbe6ef;
+  height: 75vh;
+  overflow-y: auto;
 }
+
 .newsCardList h1 {
   font-weight: 400;
   padding: 10px;
 }
+
 .newsCardList .news-container {
   margin: auto;
 }
+
 .newsCardList .news-container .news-card {
-  border-radius: 0.5rem;
-  padding: 0.4rem 2rem;
+  border-radius: .5rem;
+  padding: .4rem 2rem;
   font-size: inherit;
   background-color: #f2f2f2;
-  margin-bottom: 0.8rem;
+  margin: 0.4rem 0.9rem 0.8rem 0.9rem;
+  margin-top: 0.4rem;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+.newsCardList .news-container .news-card a {
+  color: black;
+  text-decoration: none;
+}
+
+.newsCardList .news-container .news-card:hover {
+  background-color: #c9c9c9;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+@media (max-width: 414px) {
+  .newsCardList {
+    height: 66vh;
+  }
+}
+
+.list-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-title-container .nft-list-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nft-list {
+  height: 89vh;
+  overflow-y: auto;
+}
+
+.nft-card {
+  border-radius: 1.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.nft-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+form {
+  max-width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form option {
+  color: black;
+}
+
+form label {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 414px) {
+  form {
+    max-width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form option {
+    color: black;
+  }
+  form label {
+    margin-bottom: 0rem;
+    margin-right: 1rem;
+  }
+}
+
+.page-head-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 414px) {
+  .page-head-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 170px;
+  }
+  .page-head-container div {
+    margin-left: 1.5rem;
+  }
+}
+
+.navbar .container .navbar-brand {
+  font-size: 35px;
+  margin: 8px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar .container .navbar-brand .nav .nav-link {
+  font-size: 1.6rem;
 }
 
 .header {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   width: 100vw;
   height: calc(100vh - 85px);
 }
+
 .header .header-image {
   width: 100%;
   height: calc(100vh - 85px);
@@ -137,6 +357,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
 }
+
 .header .header-title {
   position: absolute;
   width: 100%;
@@ -145,28 +366,13 @@ body {
   margin: auto;
   bottom: 50%;
 }
+
 .header .header-title h1 {
   color: #f2f2f2;
 }
+
 .header .header-title p {
   color: #f2f2f2;
   font-size: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-.nft-page-container {
-  border: 5px solid red;
-  display: flex;
-}
-
-.nft-list {
-  border: 1px solid orange;
-  display: flex;
-  flex-direction: column;
-}
-
-.nft-list-title {
-  text-align: center;
-  color: red;
-  font-size: 80%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

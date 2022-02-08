@@ -1,34 +1,159 @@
-import React, { Component, useState, useEffect } from 'react';
-import TrendingNftsCard from '../nftCard/nft-card';
+import React, { useState, useEffect } from "react";
+import Spinner from "react-bootstrap/Spinner";
+import TrendingNftsCard from "../nft-card/nft-card";
 
-const dailyNFTsSample = require('../NFTsDaily.json');
-const weeklyNFTsSample = require('../NFTsWeekly.json');
-const monthlyNFTsSample = require('../NFTsMonthly.json');
+const dailyNFTsSample = require("../NFTsDaily.json");
+const weeklyNFTsSample = require("../NFTsWeekly.json");
+const monthlyNFTsSample = require("../NFTsMonthly.json");
 
-const TrendingNftsList = ({title}) => {
-    
-    const [NFTs, setNFTs] = useState([]);
+const TrendingNftsList = ({ title }) => {
+  const [NFTs, setNFTs] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-    useEffect(()=> {
-        if (title === 'Daily') {
-            setNFTs(dailyNFTsSample);
-        } else if (title === 'Weekly') {
+  useEffect(() => {
+    setLoading(true);
+
+    if (title === "Daily") {
+      //   fetch(`https://top-nft-sales.p.rapidapi.com/sales/1d`, {
+      //     method: "GET",
+      //     headers: {
+      //       "x-rapidapi-host": "top-nft-sales.p.rapidapi.com",
+      //       "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
+      //     },
+      //   })
+      //     .then((response) => {
+      //       if (
+      //         response.ok &&
+      //         response.headers.get("Content-Type").includes("application/json")
+      //       ) {
+      //         return response.json();
+      //       } else {
+      //         throw new Error("Something went wrong");
+      //       }
+      //     })
+      //     .then(setNFTs)
+      //     .then(() => setLoading(false))
+      //     .catch((err) => {
+      //       console.error(err);
+      //     });
+
+      setNFTs(dailyNFTsSample);
+      setLoading(false);
+    } else if (title === "Weekly") {
+      let secondsLeft = 3;
+
+      function setTime() {
+        var timerInterval = setInterval(function () {
+          secondsLeft--;
+
+          if (secondsLeft === 0) {
+            clearInterval(timerInterval);
+
+            // fetch("https://top-nft-sales.p.rapidapi.com/sales/7d", {
+            //   method: "GET",
+            //   headers: {
+            //     "x-rapidapi-host": "top-nft-sales.p.rapidapi.com",
+            //     "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
+            //   },
+            // })
+            //   .then((response) => {
+            //     if (
+            //       response.ok &&
+            //       response.headers
+            //         .get("Content-Type")
+            //         .includes("application/json")
+            //     ) {
+            //       return response.json();
+            //     } else {
+            //       throw new Error("Something went wrong");
+            //     }
+            //   })
+            //   .then(setNFTs)
+            //   .then(() => setLoading(false))
+            //   .catch((err) => {
+            //     console.error(err);
+            //   });
+
             setNFTs(weeklyNFTsSample);
-        } else if (title === 'Monthly') {
-            setNFTs(monthlyNFTsSample);
-        } else {
-            console.log('time duration for trending NFTs invalid')
-        }   
-    }, [title])
+            setLoading(false);
+          }
+        }, 1000);
+      }
 
+      setTime();
+    } else if (title === "Monthly") {
+      let secondsLeft = 6;
+
+      function setTime() {
+        var timerInterval = setInterval(function () {
+          secondsLeft--;
+
+          if (secondsLeft === 0) {
+            clearInterval(timerInterval);
+            // fetch("https://top-nft-sales.p.rapidapi.com/sales/30d", {
+            //   method: "GET",
+            //   headers: {
+            //     "x-rapidapi-host": "top-nft-sales.p.rapidapi.com",
+            //     "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
+            //   },
+            // })
+            //   .then((response) => {
+            //     if (
+            //       response.ok &&
+            //       response.headers
+            //         .get("Content-Type")
+            //         .includes("application/json")
+            //     ) {
+            //       return response.json();
+            //     } else {
+            //       throw new Error("Something went wrong");
+            //     }
+            //   })
+            //   .then(setNFTs)
+            //   .then(() => setLoading(false))
+            //   .catch((err) => {
+            //     console.error(err);
+            //   });
+
+            setNFTs(monthlyNFTsSample);
+            setLoading(false);
+          }
+        }, 1000);
+      }
+
+      setTime();
+    } else {
+      console.log("time duration for trending NFTs invalid");
+    }
+  }, []);
+
+  if (loading) {
     return (
-        <div className="nft-list" >
-            <h2 className="nft-list-title">{title} Trending NFTs</h2>    
-            {NFTs.map((NFT, index) =>
-                <TrendingNftsCard key={index} NFT={NFT}/> 
-            )}
+      <div className="nft-list">
+        <div className="list-title-container">
+            <h3 className="nft-list-title">{title} Trending NFTs</h3>
         </div>
+        <Spinner
+          animation="border"
+          role="status"
+          style={{ alignSelf: "center" }}
+        >
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      </div>
     );
-}
+  }
+
+  return (
+    <div className="nft-list">
+      <div className="list-title-container">
+        <h3 className="nft-list-title">{title} Trending NFTs</h3>
+      </div>
+      {NFTs.map((NFT, index) => (
+        <TrendingNftsCard key={index} NFT={NFT} />
+      ))}
+    </div>
+  );
+};
 
 export default TrendingNftsList;
