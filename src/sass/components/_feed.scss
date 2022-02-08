@@ -1,10 +1,13 @@
 $newsCardColor: rgb(242,242,242);
 
+
 .newsCardList {
     align-items: center;
     font-size: 20px;
     height: 75vh;
-    overflow-y: auto;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
     h1 {
         font-weight: 400;
@@ -42,8 +45,23 @@ $newsCardColor: rgb(242,242,242);
 
 }
 
+
+.newsCardList::-webkit-scrollbar{
+    display: none;
+}
+
 @media(max-width: 414px){
+    
+    
     .newsCardList{
-        height: 66vh
+        height: 66vh;
+
+        .news-container{
+            
+            .news-card{
+                margin: 0.4rem 0 0.8rem 0;
+            }
+        }
     }
+    
 }

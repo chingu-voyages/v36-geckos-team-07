@@ -1,6 +1,6 @@
 .page-head-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 110px;
     align-items: center;
 
@@ -14,9 +14,7 @@
         justify-content: center;
         height: 170px;
         
-        div{
-            margin-left: 1.5rem;
-        }
+  
 
     }
 }

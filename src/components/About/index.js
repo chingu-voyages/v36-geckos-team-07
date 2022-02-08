@@ -5,21 +5,32 @@ import avatar from './../../images/avatar.png';
 function About() {
     return (
 
-        <div className='about'>
+        <div className='about container'>
             <div className='about-header'>
                 <h1>About</h1>
+                <p>Read on to learn about the App and the Team!</p>
             </div>
+            <hr
+                
+                style={{
+                color: '#000000',
+                height: 5,
+                borderColor: '#000000',
+                }}
+            />
             <div className='about-card'>
-
+                <h2>Purpose of the App</h2>
                 <p>NFTs are tokens that we can use to represent ownership of unique items. They let us tokenise things like art, collectibles, even real estate. They can only have one official owner at a time and they're secured by the Ethereum blockchain – no one can modify the record of ownership or copy/paste a new NFT into existence.</p>
 
                 <p>NFT stands for non-fungible token. Non-fungible is an economic term that you could use to describe things like your furniture, a song file, or your computer. These things are not interchangeable for other items because they have unique properties.</p>
 
                 <p>Fungible items, on the other hand, can be exchanged because their value defines them rather than their unique properties. For example, ETH or dollars are fungible because 1 ETH / $1 USD is exchangeable for another 1 ETH / $1 USD.</p>
+
+                <h2>We are Gecko Team 7</h2>
                 <CardGroup>
                     <Card>
                         {/* <Card.Img variant="top" src={logo} width="350"
-          height="400" /> */}
+                        height="400" /> */}
                         <div className="circle">
                             <div className="shape">
                                 <Card.Img variant="top" src={avatar} width="280"
