@@ -3,6 +3,8 @@ import { Container, Row, Col, Figure } from 'react-bootstrap';
 import NFTguide from './../../images/NFTguide.png';
 import crypto from './../../images/crypto-collectibles.png';
 import NFTArticle1 from './../../images/NFT-article-1.jpeg';
+import NFTArticle2 from './../../images/NFT-article-2.jpg';
+import NFTArticle3 from './../../images/NFT-article-3.png';
 
 function Resources() {
   return (
@@ -130,30 +132,30 @@ function Resources() {
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              //width={171}
+              //height={180}
               alt="171x180"
-              src={NFTArticle1}
+              src={NFTArticle2}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://www.benzinga.com/money/what-are-digital-or-crypto-collectibles/'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>WHAT ARE DIGITAL OR CRYPTO COLLECTIBLES?</a></p>
         </Col>
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              width={371}
+              height={480}
               alt="171x180"
-              src={NFTArticle1}
+              src={NFTArticle3}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://tiger21.com/insights/crypto-collectibles-101-nft/'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>Crypto Collectibles 101 | Non-Fungible Tokens</a></p>
         </Col>
         <Col xs={3}>
         <Figure>
