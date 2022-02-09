@@ -5,6 +5,11 @@ import crypto from './../../images/crypto-collectibles.png';
 import NFTArticle1 from './../../images/NFT-article-1.jpeg';
 import NFTArticle2 from './../../images/NFT-article-2.jpg';
 import NFTArticle3 from './../../images/NFT-article-3.png';
+import NFTArticle4 from './../../images/NFT-article-4.jpeg';
+import NFTArticle5 from './../../images/NFT-article-5.jpeg';
+import NFTArticle6 from './../../images/NFT-article-6.jpeg';
+import NFTArticle7 from './../../images/NFT-article-7.jpeg';
+import NFTArticle8 from './../../images/NFT-article-8.jpeg';
 
 function Resources() {
   return (
@@ -118,16 +123,16 @@ function Resources() {
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              // width={171}
+              // height={180}
               alt="171x180"
               src={NFTArticle1}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://news.anytask.com/the-anytask-platform-list-of-nft-online-learning-resources-for-artists-interested-in-this-fast-growing-sector'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>The AnyTask™ Platform list of NFT online learning resources for artists interested in this fast-growing sector</a></p>
         </Col>
         <Col xs={3}>
         <Figure>
@@ -160,16 +165,16 @@ function Resources() {
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              // width={171}
+              // height={180}
               alt="171x180"
-              src={NFTArticle1}
+              src={NFTArticle4}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://medium.com/pandoraprotocol/pandora-protocol-bringing-real-value-to-illiquid-real-world-assets-via-tokenisation-3fdb16239b80'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>Pandora Protocol: Bringing Real Value To Illiquid Real-World Assets Via Tokenisation</a></p>
         </Col>
       </Row>
       <hr
@@ -183,58 +188,58 @@ function Resources() {
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              // width={171}
+              // height={180}
               alt="171x180"
-              src={NFTArticle1}
+              src={NFTArticle5}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://ncfacanada.org/nft-fire-hose-educational-resources/'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>NFT Fire hose: Educational Resources</a></p>
         </Col>
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              // width={171}
+              // height={180}
               alt="171x180"
-              src={NFTArticle1}
+              src={NFTArticle6}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://www.amazon.com/gp/product/B093XTZKKX/'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>The 15-Minute Guide to NFTs: The ultra-fast primer to understand non-fungible tokens</a></p>
         </Col>
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              // width={171}
+              // height={180}
               alt="171x180"
-              src={NFTArticle1}
+              src={NFTArticle7}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://www.howtonft.org/'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>How to NFT?: Free Resources to Learn How to Create NFTs</a></p>
         </Col>
         <Col xs={3}>
         <Figure>
             <Figure.Image
-              width={171}
-              height={180}
+              // width={171}
+              // height={180}
               alt="171x180"
-              src={NFTArticle1}
+              src={NFTArticle8}
             />
           </Figure>
           <p><a
-            href='https://darkstar.mirror.xyz/bOWhYyX4u5mY0AfY-ObnQSOOcMVEmJQPVUFSw1qJsdc'
+            href='https://www.forumnft.com/'
             target='_blank'
-            rel='noreferrer'>NFTs Need an Audience: Utility, Consumption and Building New Worlds</a></p>
+            rel='noreferrer'>Forum NFT(Web): Online Forums and Discussion Boards for NFT Talk</a></p>
         </Col>
       </Row>
 
