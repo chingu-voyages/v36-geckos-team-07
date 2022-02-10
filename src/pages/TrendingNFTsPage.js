@@ -3,29 +3,25 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
 import TrendingNftsList from '../components/TrendingNFTs/nft-card-list/nft-card-list';
 
 const TrendingNFTsPage = () => {
     return (
-        // <div className="nft-page-container">
-        <Container fluid="md">
-            <Row>
-                <Col>
+        <Container fluid>
+            <Row className="justify-content-center">
+                <Col sm={12} md={6} lg={4}>
                     <TrendingNftsList title={'Daily'} />            
                 </Col>
                 
-                <Col>
+                <Col sm={12} md={6} lg={4}>
                     <TrendingNftsList title={'Weekly'} />
                 </Col>
 
-                <Col>
+                <Col sm={12} md={6} lg={4}>
                     <TrendingNftsList title={'Monthly'} />            
                 </Col>
             </Row>
         </Container>
-            
-        // </div>
     );
 }
 
