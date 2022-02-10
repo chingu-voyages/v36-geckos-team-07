@@ -10,9 +10,7 @@ class MainFeed extends Component {
         this.state = {
             news: [],
             dropdown: ''
-        }
-
-        
+        } 
     }
 
     componentDidMount(){
@@ -45,15 +43,12 @@ class MainFeed extends Component {
    
     }
 
-
-
     render(){
         const { news, dropdown } = this.state;
         const nameArray = []
         // filters the news array by name into new array filteredNews
         const filteredNews = news.filter(news => news.name.toLowerCase().includes(dropdown.toLowerCase()))
         
-
         const newsNames = (names) => {
     
             // takes the "names" array object and removes all the duplicates and enters it into a new array
@@ -116,15 +111,10 @@ class MainFeed extends Component {
 
                     <TrendingNftsList title={'Daily'} className="nft-list"/>
                 
-                </div>
-            
+                </div>   
             </>
         )
-
     }
- 
- 
-
 }
 
 export default MainFeed;

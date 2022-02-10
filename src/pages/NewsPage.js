@@ -5,7 +5,6 @@ const NewsPage = () => {
     return (
         <div>
             <MainFeed />
-           
         </div>
     );
 }
