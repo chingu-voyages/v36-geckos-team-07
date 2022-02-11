@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Josefin+Slab:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap");
 
 // VARIABLES
-$backgroundColor: rgb(203,230,239);
+$backgroundColor: rgb(203, 230, 239);
 $black-color: #000000;
-$link-visited-color: #02055A;
+$link-visited-color: #02055a;
 
 // TYPOGRAPHY
-$Title-font: 'Cabin', sans-serif;
-$small-body-font: 'Josefin Slab', serif;
-$titlefontfamily: 'Bebas Neue', cursive;
-$descriptionfontfamily: 'IBM Plex Serif', serif;
+$titlefontfamily: "Bebas Neue", cursive;
+$descriptionfontfamily: "IBM Plex Serif", serif;
+
 // OVERALL
 
 body {
-    background-color: $backgroundColor;
-    h1, h2, h3, a{
-        font-family: $titlefontfamily;
-    }
+  background-color: $backgroundColor;
+  h1,
+  h2,
+  h3,
+  a {
+    font-family: $titlefontfamily;
+  }
 
-    p{
-        font-family: $descriptionfontfamily;
-    }
+  p {
+    font-family: $descriptionfontfamily;
+  }
 }

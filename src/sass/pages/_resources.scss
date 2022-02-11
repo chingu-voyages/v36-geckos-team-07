@@ -1,65 +1,64 @@
-@use '../base/base';
+@use "../base/base";
 
 .resources-title {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  margin: 10px;
 
-    h1 {
-        font-family: $Title-font;
-    }
+  h1 {
+    font-family: $titlefontfamily;
+  }
 
-    p {
-        font-family: $small-body-font;
-        margin-bottom: 0px;
-    }
+  p {
+    font-family: $descriptionfontfamily;
+    margin-bottom: 0px;
+  }
 }
 
 figure {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 h2 {
-    font-size: 25px;
-    font-weight: 500;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 p {
-    margin-bottom: 2px;
-    font-size: 16px;
+  margin-bottom: 2px;
+  font-size: 16px;
 }
 
 a {
-    color: $black-color;
+  color: $black-color;
+  text-decoration: none;
+  &:visited {
+    color: $link-visited-color;
     text-decoration: none;
-    &:visited {
-        color: $link-visited-color;
-        text-decoration: none;
-        opacity: 0.42;
-    }
-    &:hover{
-        opacity: 0.7;
-        text-decoration: underline;
-    }
-    &:active{
-        opacity: 1;
-        text-decoration: none;
-    }
+    opacity: 0.42;
+  }
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+  &:active {
+    opacity: 1;
+    text-decoration: none;
+  }
 }
 
-
 .video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 
-    iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }

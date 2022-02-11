@@ -1,27 +1,26 @@
-.news-body{
-    display: flex;
+.news-body {
+  display: flex;
 
-    .daily-news{
-        width: 70%; 
-    }
+  .daily-news {
+    width: 70%;
+  }
 
-    .nft-list{
-        width: 30%;        
-    }
+  .nft-list {
+    width: 30%;
+  }
 }
 
+@media (max-width: 579px) {
+  .news-body {
+    width: 100%;
 
-@media(max-width: 579px){
-        .news-body{
-        width: 100%;
-
-        .daily-news{
-            width: 100%;
-            margin-left: 0;
-        }
-        
-        .nft-list{
-            display: none;
-        }
+    .daily-news {
+      width: 100%;
+      margin-left: 0;
     }
+
+    .nft-list {
+      display: none;
+    }
+  }
 }

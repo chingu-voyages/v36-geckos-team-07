@@ -1,22 +1,18 @@
-.page-head-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.page-head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    p{
-        margin-bottom: 0;
-    }
-
+  p {
+    margin-bottom: 0;
+  }
 }
 
-@media(max-width: 414px){
-    .page-head-container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 170px;
-        
-  
-
-    }
+@media (max-width: 414px) {
+  .page-head-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+  }
 }
