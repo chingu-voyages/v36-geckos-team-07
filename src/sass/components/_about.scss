@@ -1,129 +1,117 @@
-$cardContainerColor: rgb(192,192,192);
-$cardTextColor: rgb(242,242,242);
+$cardContainerColor: rgb(192, 192, 192);
+$cardTextColor: rgb(242, 242, 242);
 
 .about-header {
+  height: 80px;
 
-    height: 80px;
+  h1 {
+    font-weight: 500;
+    line-height: 1.2;
+  }
 
-        h1 {
-            
-    
-            font-weight: 500;
-            line-height: 1.2;
-        }
-
-        p{
-            margin-bottom: 0;
-        }
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .about-card {
-    
-    p{
-        text-align: justify;
-        display: block;
-        margin: 2em;
-        font-weight: 500;
-    }
+  p {
+    text-align: justify;
+    display: block;
+    margin: 2em;
+    font-weight: 500;
+  }
 
-    .card-group {
-        margin: 20px;
-        padding: 30px;
-        border-radius: 10%;
+  .card-group {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10%;
+  }
 
-    }
-
-    .card {
-        background-color: $cardContainerColor;
-        color: $cardTextColor;
-        padding: 10px;
-        box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
-        text-align: center;
-        align-items: center;
-        margin: 0 20px;
-    }
+  .card {
+    background-color: $cardContainerColor;
+    color: $cardTextColor;
+    padding: 10px;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+  }
 }
 .circle {
-    height: 180px;
-    width: 180px;
-    position: relative;
+  height: 180px;
+  width: 180px;
+  position: relative;
 
-    .shape {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $cardTextColor;
-        clip-path: circle(49.4% at 50% 50%);
-        transition: 0.5s;
+  .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $cardTextColor;
+    clip-path: circle(49.4% at 50% 50%);
+    transition: 0.5s;
 
-        .card-img {
-            position: absolute;
-            top: 10;
-            left: 10;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .card-img {
+      position: absolute;
+      top: 10;
+      left: 10;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-
+  }
 }
 .card:hover .shape {
-    transform: translateY(-30px);
+  transform: translateY(-30px);
 }
-      
+
 @media (min-width: 900px) {
-    .circle {
-        height: 250px;
-        width: 250px;
-    }
-    
-    .shape .card-img {
-        width: 100%;
-        height: 100%;
-    }
+  .circle {
+    height: 250px;
+    width: 250px;
+  }
 
-
-  
+  .shape .card-img {
+    width: 100%;
+    height: 100%;
+  }
 }
-  
-@media(max-width: 414px){
 
-    .about{
-        width: 100%;
+@media (max-width: 414px) {
+  .about {
+    width: 100%;
+  }
+
+  .about-header {
+    h1 {
+      text-align: inherit;
     }
+  }
+  .about-card {
+    padding: 1rem;
+    padding-top: 0;
 
-    .about-header{
-        h1{
-            text-align: inherit;
-        }
+    h2 {
+      margin-top: 1rem;
     }
-    .about-card{
-        padding: 1rem;
-        padding-top: 0;
-
-        h2{
-            margin-top: 1rem;
-        }
-        p{
-            padding: 0;
-            margin: 1em 0;
-        }
-        .card-group{
-
-            margin: 15px;
-            padding: 10px;
-
-            .card{
-                margin: 0 0 25px 0;
-                padding: 0;
-            }
-        }
-   
+    p {
+      padding: 0;
+      margin: 1em 0;
     }
+    .card-group {
+      margin: 15px;
+      padding: 10px;
 
-    .card:hover .shape {
-        transform: translateY(0);
+      .card {
+        margin: 0 0 25px 0;
+        padding: 0;
+      }
     }
+  }
+
+  .card:hover .shape {
+    transform: translateY(0);
+  }
 }
