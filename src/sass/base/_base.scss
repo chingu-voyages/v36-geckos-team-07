@@ -6,14 +6,20 @@ $backgroundColor: rgb(203,230,239);
 $black-color: #000000;
 $link-visited-color: #02055A;
 
+// TYPOGRAPHY
 $Title-font: 'Cabin', sans-serif;
 $small-body-font: 'Josefin Slab', serif;
-
-// TYPOGRAPHY
-
-
+$titlefontfamily: 'Bebas Neue', cursive;
+$descriptionfontfamily: 'IBM Plex Serif', serif;
 // OVERALL
 
 body {
     background-color: $backgroundColor;
+    h1, h2, h3, a{
+        font-family: $titlefontfamily;
+    }
+
+    p{
+        font-family: $descriptionfontfamily;
+    }
 }

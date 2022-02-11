@@ -4,6 +4,14 @@ body {
   background-color: #cbe6ef;
 }
 
+body h1, body h2, body h3, body a {
+  font-family: "Bebas Neue", cursive;
+}
+
+body p {
+  font-family: "IBM Plex Serif", serif;
+}
+
 @use '../base/base';
 .resources-title {
   display: -webkit-box;
@@ -90,7 +98,7 @@ a:active {
   width: 30%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 579px) {
   .news-body {
     width: 100%;
   }
