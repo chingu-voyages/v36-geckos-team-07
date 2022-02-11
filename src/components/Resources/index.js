@@ -11,8 +11,8 @@ function Resources() {
 
     <Container>
       <div className='resources-title'>
-        <h1>The Resource Hub</h1>
-        <p>All  you need to earn  about NFTs and all Crypto Collectibles: Resources for  Bringing NFT world to your reach  </p>
+        <h1>Resources</h1>
+        <p>Learn about NFTs and cryptocurrencies</p>
       </div>
       <hr
         style={{
