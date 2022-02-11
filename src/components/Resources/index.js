@@ -14,10 +14,7 @@ import NFTArticle8 from './../../images/NFT-article-8.jpeg';
 function Resources() {
   return (
 
-    // <div className='resources-container'>
-
     <Container>
-      {/* <Row> */}
       <div className='resources-title'>
         <h1>Resources</h1>
         <p>Learn about NFTs and cryptocurrencies</p>
@@ -152,7 +149,7 @@ function Resources() {
                 alt="171x180"
                 src={NFTArticle2}
               /></a>
-        
+
           </Figure>
           <p><a
             href='https://www.benzinga.com/money/what-are-digital-or-crypto-collectibles/'
@@ -219,7 +216,7 @@ function Resources() {
             target='_blank'
             rel='noreferrer'>NFT Fire hose: Educational Resources</a></p>
         </Col>
-        <Col xs={3}>
+        <Col xs={12} md={3}>
           <Figure>
             <a href='https://www.amazon.com/gp/product/B093XTZKKX/'
               target='_blank'
@@ -236,7 +233,7 @@ function Resources() {
             target='_blank'
             rel='noreferrer'>The 15-Minute Guide to NFTs: The ultra-fast primer to understand non-fungible tokens</a></p>
         </Col>
-        <Col xs={3}>
+        <Col xs={12} md={3}>
           <Figure>
             <a href='https://www.howtonft.org/'
               target='_blank'
@@ -253,7 +250,7 @@ function Resources() {
             target='_blank'
             rel='noreferrer'>How to NFT?: Free Resources to Learn How to Create NFTs</a></p>
         </Col>
-        <Col xs={3}>
+        <Col xs={12} md={3}>
           <Figure>
             <a href='https://www.forumnft.com/'
               target='_blank'
@@ -271,11 +268,8 @@ function Resources() {
             rel='noreferrer'>Forum NFT(Web): Online Forums and Discussion Boards for NFT Talk</a></p>
         </Col>
       </Row>
-      {/* </Row> */}
 
     </Container>
-
-    // </div>
 
   );
 }
