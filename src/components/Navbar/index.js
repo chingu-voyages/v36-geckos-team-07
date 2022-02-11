@@ -31,10 +31,11 @@ function NavBar() {
       </NavDropdown>
     </Nav> */}
     <Nav className="ms-auto">
+    <Nav.Link href="/home">Home</Nav.Link>
       <Nav.Link href="/news">News</Nav.Link>
       <Nav.Link href="/resource">Resources</Nav.Link>
       <Nav.Link href="/trendingnfts">Trending NFTs</Nav.Link>
-      <Nav.Link eventKey={4} href="/about">
+      <Nav.Link eventKey={5} href="/about">
         About
       </Nav.Link>
     </Nav>

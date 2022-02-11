@@ -7,8 +7,8 @@ function Header() {
         <div className="header-image" style={{ backgroundImage: `url(${headerImage})` }}>
             </div>
             <div className="header-title">
-                <h1>NFT APP</h1>
-                <p>The largest source to everything NFT</p>
+                <h1>Token Train</h1>
+                <p>Your Station for all things Crypto and  NFT</p>
             </div>
 
     </div>
