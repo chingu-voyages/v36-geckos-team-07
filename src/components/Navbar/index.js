@@ -16,7 +16,7 @@ function NavBar() {
           height="50"
           className="d-inline-block align-top"
         />{' '}
-        NFT App</Navbar.Brand>
+        Token Train</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     {/* <Nav className="me-auto">
