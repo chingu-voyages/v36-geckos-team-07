@@ -2,10 +2,17 @@
 $backgroundColor: rgb(203,230,239);
 
 // TYPOGRAPHY
-
-
+$titlefontfamily: 'Bebas Neue', cursive;
+$descriptionfontfamily: 'IBM Plex Serif', serif;
 // OVERALL
 
 body {
     background-color: $backgroundColor;
+    h1, h2, h3, a{
+        font-family: $titlefontfamily;
+    }
+
+    p{
+        font-family: $descriptionfontfamily;
+    }
 }
