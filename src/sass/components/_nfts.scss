@@ -1,26 +1,23 @@
-.list-title-container{
-    display: flex;
-    height: 110px;
-    align-items: center;
-    justify-content: center;
-
-    .nft-list-title {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-}
-
 .nft-list {
-    height: 89vh;
-    overflow-y: auto;
+  font-family: $titlefontfamily;
 }
+
+.nft-card-container {
+    overflow: auto;
+    height: 77.8vh;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.nft-card-container::-webkit-scrollbar {
+    display: none;
+  }
 
 .nft-card {
-    border-radius: 1.5rem;
-    transition: all 0.2s ease-in;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-in;
 }
 
 .nft-card:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
