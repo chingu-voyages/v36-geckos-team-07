@@ -8,7 +8,7 @@ function Header() {
             </div>
             <div className="header-title">
                 <h1>Token Train</h1>
-                <p>Your station for all things crypto and NFT</p>
+                <p>Your Station for all things Crypto and  NFT</p>
             </div>
 
     </div>

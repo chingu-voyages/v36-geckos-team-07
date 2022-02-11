@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Josefin+Slab:wght@400&display=swap");
 body {
   background-color: #cbe6ef;
 }
@@ -8,6 +10,63 @@ body h1, body h2, body h3, body a {
 
 body p {
   font-family: "IBM Plex Serif", serif;
+}
+
+@use '../base/base';
+.resources-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.resources-title h1 {
+  font-family: "Cabin", sans-serif;
+}
+
+.resources-title p {
+  font-family: "Josefin Slab", serif;
+  margin-bottom: 0px;
+}
+
+figure {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #02055A;
+  text-decoration: none;
+  opacity: 0.42;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+a:active {
+  opacity: 1;
+  text-decoration: none;
 }
 
 .video-responsive {
@@ -336,8 +395,28 @@ form label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.navbar .container .navbar-brand .nav .nav-link {
-  font-size: 1.6rem;
+.navbar .container .navbar-brand:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.navbar .container .navbar-brand:active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.navbar .container .nav-link {
+  font-size: 1.5rem;
+}
+
+.navbar .container .nav-link:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.navbar .container .nav-link:active {
+  opacity: 1;
+  text-decoration: none;
 }
 
 .header {
