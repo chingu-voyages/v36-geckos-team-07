@@ -152,6 +152,7 @@ function Resources() {
                 alt="171x180"
                 src={NFTArticle2}
               /></a>
+        
           </Figure>
           <p><a
             href='https://www.benzinga.com/money/what-are-digital-or-crypto-collectibles/'
