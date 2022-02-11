@@ -32,7 +32,7 @@ Key technologies and dependencies used in this project:
     - [Top NFT Sales](https://rapidapi.com/NovusAPI/api/top-nft-sales/)
     - [Blockchain News](https://rapidapi.com/noobbot12367/api/blockchain-news1/)
 4. Create a .env file and include a `REACT_APP_RAPID_API_KEY` obtained from [RapidAPI](https://rapidapi.com/)
-5. Run `npm start' in your bash/command line to launch the application
+5. Run `npm run start` in your bash/command line to launch the application
 
 ## Links
 - [GitHub repository](https://github.com/chingu-voyages/v36-geckos-team-07)
