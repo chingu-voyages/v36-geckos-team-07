@@ -40,16 +40,16 @@ Key technologies and dependencies used in this project:
 
 ## Screenshots
 #### Home Page
-<img src="./src/images/screenshot-home.png" alt="screenshot of home page" width=50% height=50%>
+<img src="./src/images/screenshot-home.png" alt="screenshot of home page" width=75% height=75%>
 
 #### News Page
-<img src="./src/images/screenshot-news.png" alt="screenshot of news page" width=50% height=50%>
+<img src="./src/images/screenshot-news.png" alt="screenshot of news page" width=75% height=75%>
 
 #### Trending NFTs Page
-<img src="./src/images/screenshot-trendingNFTs.png" alt="screenshot of trending NFTs page" width=50% height=50%>
+<img src="./src/images/screenshot-trendingNFTs.png" alt="screenshot of trending NFTs page" width=75% height=75%>
 
 #### Resources Page
-<img src="./src/images/screenshot-resources.png" alt="screenshot of resources page" width=50% height=50%>
+<img src="./src/images/screenshot-resources.png" alt="screenshot of resources page" width=75% height=75%>
 
 ## Development Team
 Mateo Cruz
