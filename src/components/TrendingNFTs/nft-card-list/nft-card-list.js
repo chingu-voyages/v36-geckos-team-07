@@ -132,14 +132,14 @@ const TrendingNftsList = ({ title }) => {
       <div className="nft-list mb-5">
         <h3
           className="text-center d-flex align-items-center justify-content-center"
-          style={{ height: "80px" }}
+          style={{ height: "100px" }}
         >
           {title} Trending NFTs
         </h3>
         <hr
           style={{
             color: "#000000",
-            height: 5,
+            height: 2,
             borderColor: "#000000",
           }}
         />
@@ -154,14 +154,14 @@ const TrendingNftsList = ({ title }) => {
     <div className="nft-list mb-5">
       <h3
         className="text-center d-flex align-items-center justify-content-center"
-        style={{ height: "80px" }}
+        style={{ height: "100px" }}
       >
         {title} Trending NFTs
       </h3>
       <hr
         style={{
           color: "#000000",
-          height: 5,
+          height: 2,
           borderColor: "#000000",
         }}
       />

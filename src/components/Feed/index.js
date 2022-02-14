@@ -68,7 +68,7 @@ class MainFeed extends Component {
         <div className="news-body container">
           <div className="daily-news">
             {/* page header */}
-            <div className="page-head-container" style={{height: "80px"}}>
+            <div className="page-head-container">
               <div>
                 <h1>News Source</h1>
                 <p>
@@ -90,7 +90,7 @@ class MainFeed extends Component {
             <hr
               style={{
                 color: "#000000",
-                height: 5,
+                height: 2,
                 borderColor: "#000000",
               }}
             />

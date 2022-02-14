@@ -7,15 +7,17 @@ import Gift from '../../images/gift.jpg';
 function About() {
   return (
     <div className="about container">
-      <div className="about-header">
-        <h1>About</h1>
-        <p>Read on to learn about Token Train and the development team!</p>
+      <div className="page-head-container">
+        <div>
+          <h1>About</h1>
+          <p>Read on to learn about Token Train and the development team!</p>
+        </div>
       </div>
 
       <hr
         style={{
           color: "#000000",
-          height: 5,
+          height: 2,
           borderColor: "#000000",
         }}
       />

@@ -1,8 +1,9 @@
 .page-head-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
+  padding-top: 10px;
+  margin: 10px 0 0 0;
+  max-height: 120px;
   p {
     margin-bottom: 0;
   }
@@ -13,6 +14,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 170px;
+    max-height: fit-content;
+
+    form{
+      margin: 20px 0 20px 0;    
+    }
+
   }
 }
